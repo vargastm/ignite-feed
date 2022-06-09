@@ -1,7 +1,11 @@
+import { Header } from "./Components/Header/Header"
+
+import './global.css'
+
 function App() {
 
   return (
-   <h1>Ignite Feed</h1>
+    <Header />
   )
 }
 
