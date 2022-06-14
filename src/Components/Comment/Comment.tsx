@@ -14,7 +14,7 @@ export function Comment () {
               <time title="9 de Junho às 15:22" dateTime="2022-06-09 15:22:47">Cerca de 1h atrás</time>
             </div>
             <button title='Deletar comentário'>
-              <Trash size={20} />
+              <Trash size={24} />
             </button>
           </header>
           <p>Muito bom, parabéns!!!</p>
