@@ -11,7 +11,7 @@ export function Sidebar() {
         src="https://images.pexels.com/photos/5327045/pexels-photo-5327045.jpeg" 
       />
       <div className={styles.profile}>
-        <Avatar hasBorder src="https://github.com/vargastm.png" />
+        <Avatar src="https://github.com/vargastm.png" />
         <strong>Tiago Martins Vargas</strong>
         <span>Web Developer</span>
 
