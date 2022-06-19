@@ -4,7 +4,7 @@ import ptBR from 'date-fns/locale/pt-BR'
 import styles from './Post.module.css'
 import { Comment } from '../Comment/Comment'
 import { Avatar } from '../Avatar/Avatar'
-import { ChangeEvent, useState } from 'react'
+import { ChangeEvent, FormEvent, InvalidEvent, useState } from 'react'
 
 interface PostProps {
   id?: number,
@@ -14,7 +14,7 @@ interface PostProps {
     role: string
   },
   content: Array<{
-    type: string
+    type: 'paragraph' | 'link'
     content: string
   }>,
   publishedAt: Date
@@ -31,20 +31,20 @@ export function Post({author, publishedAt, content}:PostProps) {
 
   const publishedDateRelativetoNow = formatDistanceToNow(publishedAt, {locale: ptBR})
 
-  function handleCreateNewComment() {
-    event?.preventDefault()
+  function handleCreateNewComment(event: FormEvent) {
+    event.preventDefault()
 
     setComments([...comments, newCommentText])
     setNewCommentText('')
   }
 
   function handleNewCommentChange(event: ChangeEvent<HTMLTextAreaElement>) {
-    event?.target.setCustomValidity('')
+    event.target.setCustomValidity('')
     setNewCommentText(event?.target.value)
   }
 
-  function handleNewCommentInvalid(event: ChangeEvent<HTMLTextAreaElement>) {
-    event?.target.setCustomValidity('Esse campo é obrigatório!')
+  function handleNewCommentInvalid(event: InvalidEvent<HTMLTextAreaElement>) {
+    event.target.setCustomValidity('Esse campo é obrigatório!')
   }
 
   function deleteComment(commentToDelete: string) {
