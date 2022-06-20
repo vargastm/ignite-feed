@@ -1,3 +1,7 @@
+<h4 align="center">
+  <img alt="Ignite Feed" src=".github/ignite-feed.png" width="250px" /><br>
+</h4>
+
 ### ♟ Summary
 
 <p align="center">
@@ -14,7 +18,7 @@
 ### 📱 Preview
 
 <p align="center">
-  <img alt="Ignite Feed" src=".src/assets/ignite-logo.svg" width="100%">
+  <img alt="Ignite Feed Preview" src=".github/preview.png" width="100%">
 </p>
 
 ### 💻 Live Preview
