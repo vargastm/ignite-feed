@@ -62,7 +62,7 @@ npm run dev
 
 ### 📝 License
 
-**Ignite Feed** is released under the [MIT License](./LICENSE.md) para mais detalhes.
+**Ignite Feed** is released under the [MIT License](./LICENSE) para mais detalhes.
 
 ---
 
