@@ -14,7 +14,7 @@ interface PostProps {
     role: string
   },
   content: Array<{
-    type: 'paragraph' | 'link'
+    type: string,
     content: string
   }>,
   publishedAt: Date
